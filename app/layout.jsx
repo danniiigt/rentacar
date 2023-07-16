@@ -1,9 +1,11 @@
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import { ThemeProvider } from "@/providers/ThemeProvider";
-
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+});
 
 export const metadata = {
   title: "Rentacar",
@@ -17,7 +19,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider
           attribute="class"
           storageKey="theme"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableColorScheme
         >
           {children}

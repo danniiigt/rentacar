@@ -1,8 +1,8 @@
-import { Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import "./globals.css";
 
-const inter = Roboto({
+const inter = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "700", "900"],
 });
@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className + " overflow-x-hidden"}>
         <ThemeProvider
           attribute="class"
           storageKey="theme"

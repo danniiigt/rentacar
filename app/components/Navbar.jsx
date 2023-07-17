@@ -8,7 +8,7 @@ import Link from "next/link";
 
 let links = [
   { href: "/", label: "Inicio" },
-  { href: "/catalogo", label: "Catálogo" },
+  { href: "/stock", label: "Nuestro stock" },
   { href: "/acerca-de", label: "Acerca de" },
   { href: "/encuentranos", label: "Encuentranos" },
   { href: "/nuestro-equipo", label: "Nuestro equipo" },
@@ -52,7 +52,10 @@ export const Navbar = () => {
           >
             <Link href="/login">Acceder</Link>
           </Button>
-          <Button className="shadow-lg shadow-primary/50 py-6 text-md" asChild>
+          <Button
+            className="shadow-lg shadow-primary/50 py-6 text-md rounded"
+            asChild
+          >
             <Link href="/registro">Registrarme</Link>
           </Button>
         </div>

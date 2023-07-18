@@ -3,7 +3,7 @@ import React from "react";
 
 export const SaveBanner = () => {
   return (
-    <div className="bg-white">
+    <section className="bg-white">
       <Container className="h-40 flex flex-col items-center justify-center">
         <h1 className="font-bold text-4xl">
           ¡Los mejores coches de alquiler a un precio económico!
@@ -18,6 +18,6 @@ export const SaveBanner = () => {
           semana.
         </h1>
       </Container>
-    </div>
+    </section>
   );
 };

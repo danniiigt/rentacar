@@ -6,7 +6,7 @@ import Link from "next/link";
 export const MainBanner = () => {
   return (
     <Container>
-      <div className="h-[calc(92vh-96px)] flex items-center z-10">
+      <section className="h-[calc(92vh-96px)] flex items-center z-10">
         <div className="flex">
           <div className="w-[37.5%]">
             <div>
@@ -77,7 +77,7 @@ export const MainBanner = () => {
             />
           </div>
         </div>
-      </div>
+      </section>
     </Container>
   );
 };

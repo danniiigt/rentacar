@@ -27,7 +27,7 @@ const BannerItem = ({ src, title, description }) => {
 
 export const EasyBanner = () => {
   return (
-    <div className="bg-white my-24 py-24">
+    <section className="bg-white my-24 py-24">
       <Container>
         <h1 className="text-2xl font-semibold text-center underline decoration-primary">
           Planea tu viaje ahora
@@ -67,6 +67,6 @@ export const EasyBanner = () => {
           />
         </div>
       </Container>
-    </div>
+    </section>
   );
 };

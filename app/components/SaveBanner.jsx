@@ -1,5 +1,4 @@
 import { Container } from "@/components/shared/Container";
-import React from "react";
 
 export const SaveBanner = () => {
   return (

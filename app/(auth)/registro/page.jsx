@@ -1,11 +1,12 @@
 import React from "react";
+import RegisterForm from "../components/RegisterForm";
+
+export const metadata = {
+  title: "Registrarse - Rentacar",
+};
 
 const RegisterPage = () => {
-  return (
-    <div>
-      <h1>Register</h1>
-    </div>
-  );
+  return <RegisterForm />;
 };
 
 export default RegisterPage;

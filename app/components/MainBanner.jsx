@@ -36,7 +36,7 @@ export const MainBanner = () => {
                 asChild
                 className="py-8 px-5 text-md shadow-lg shadow-primary/25 rounded"
               >
-                <Link href="/stock">
+                <Link href="/stock" className="flex">
                   Ver Stock
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

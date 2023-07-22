@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Nuestro equipo - Rentacar",
+};
+
 const NuestroEquipoPage = () => {
   return (
     <div>

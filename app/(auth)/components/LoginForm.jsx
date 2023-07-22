@@ -67,7 +67,7 @@ const LoginForm = () => {
   };
 
   return (
-    <Card className="w-full max-w-[575px] bg-background border-none shadow-none">
+    <Card className="w-full max-w-[575px] border-none shadow-none">
       <CardHeader>
         <CardTitle>Iniciar Sesión</CardTitle>
         <CardDescription className="text-muted-foreground">
@@ -80,7 +80,7 @@ const LoginForm = () => {
           <Button
             color="#F8F"
             variant="outline"
-            className="w-full rounded-md"
+            className="w-full rounded-md hover:bg-card"
             onClick={() => handleSocialLogin("github")}
             loading={loading === "github"}
             disabled={loading != null}
@@ -91,7 +91,7 @@ const LoginForm = () => {
           <Button
             color="#F8F"
             variant="outline"
-            className="w-full rounded-md"
+            className="w-full rounded-md hover:bg-card"
             onClick={() => handleSocialLogin("google")}
             loading={loading === "google"}
             disabled={loading != null}
@@ -106,7 +106,7 @@ const LoginForm = () => {
             <span className="w-full border-t"></span>
           </div>
           <div className="relative flex justify-center text-xs uppercase">
-            <span className="bg-background px-2 text-muted-foreground">
+            <span className="px-2 bg-card text-muted-foreground">
               O CONTINUA CON
             </span>
           </div>

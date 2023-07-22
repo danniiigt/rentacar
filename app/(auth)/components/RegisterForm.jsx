@@ -75,7 +75,7 @@ const RegisterForm = () => {
   };
 
   return (
-    <Card className="w-full max-w-[575px] bg-background border-none shadow-none">
+    <Card className="w-full max-w-[575px] border-none shadow-none">
       <CardHeader>
         <CardTitle>Crear una cuenta</CardTitle>
         <CardDescription
@@ -94,7 +94,7 @@ const RegisterForm = () => {
             onClick={() => handleSocialRegister("github")}
             color="#F8F"
             variant="outline"
-            className="w-full"
+            className="w-full hover:bg-card"
             loading={loading === "github"}
             disabled={loading != null}
           >
@@ -105,7 +105,7 @@ const RegisterForm = () => {
             onClick={() => handleSocialRegister("google")}
             color="#F8F"
             variant="outline"
-            className="w-full"
+            className="w-full hover:bg-card"
             loading={loading === "google"}
             disabled={loading != null}
           >
@@ -119,7 +119,7 @@ const RegisterForm = () => {
             <span className="w-full border-t"></span>
           </div>
           <div className="relative flex justify-center text-xs uppercase">
-            <span className="bg-background px-2 text-muted-foreground">
+            <span className="bg-card px-2 text-muted-foreground">
               O CONTINUA CON
             </span>
           </div>
@@ -138,7 +138,7 @@ const RegisterForm = () => {
               placeholder="Tu nombre"
               disabled={loading != null}
               {...register("name", {
-                required: "Este campo es requerido",
+                required: "(!) Indica tu nombre",
                 minLength: {
                   value: 2,
                   message: "El nombre debe tener al menos 2 caracteres",
@@ -175,7 +175,7 @@ const RegisterForm = () => {
               errorText={errors?.email?.message}
               disabled={loading != null}
               {...register("email", {
-                required: "Este campo es requerido",
+                required: "(!) Indica tu email",
                 pattern: {
                   value: /\S+@\S+\.\S+/,
                   message: "El email no es válido",
@@ -209,7 +209,7 @@ const RegisterForm = () => {
               disabled={loading != null}
               placeholder="Contraseña segura"
               {...register("password", {
-                required: "Este campo es requerido",
+                required: "(!) Indica tu contraseña",
                 minLength: {
                   value: 8,
                   message: "La contraseña debe tener mínimo 8 caracteres",
@@ -227,7 +227,7 @@ const RegisterForm = () => {
               disabled={loading != null}
               placeholder="Contraseña segura"
               {...register("passwordConfirm", {
-                required: "Este campo es requerido",
+                required: "(!) Indica tu contraseña de confirmación",
                 minLength: {
                   value: 8,
                   message: "La contraseña debe tener mínimo 8 caracteres",

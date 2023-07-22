@@ -1,5 +1,9 @@
 import React from "react";
 
+export const metadata = {
+  title: "Nuestro Stock - Rentacar",
+};
+
 const Stockpage = () => {
   return (
     <div>

@@ -1,16 +1,36 @@
 import { Logo } from "@/components/shared/Logo";
 import { getServerSession } from "next-auth";
 import Image from "next/image";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 
-const AuthLayout = ({ children }) => {
-  const session = getServerSession();
+const AuthLayout = async ({ children }) => {
+  const session = await getServerSession();
+  console.log(session);
   if (session) redirect("/");
 
   return (
     <div className="w-screen h-screen flex justify-between">
-      <div className="hidden lg:flex w-1/2 xl:w-2/3 h-full bg-muted p-8  flex-col justify-between shadow">
-        <Logo />
+      <div className="hidden lg:flex w-1/2 xl:w-2/3 h-full bg-background p-8 flex-col justify-between shadow">
+        <div className="w-full flex items-center justify-between">
+          <Link href="/" className="hover:text-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+              />
+            </svg>
+          </Link>
+          <Logo />
+        </div>
 
         <Image
           src="/images/polo-banner.png"
@@ -102,7 +122,7 @@ const AuthLayout = ({ children }) => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 xl:w-2/5 lg h-full flex items-center justify-center">
+      <div className="w-full lg:w-1/2 xl:w-2/5 lg h-full bg-card flex items-center justify-center">
         {children}
       </div>
     </div>

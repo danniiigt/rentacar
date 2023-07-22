@@ -30,9 +30,9 @@ export const PeopleReview = () => {
           <Card className="border-none bg-background rounded-none shadow">
             <CardContent className="p-9 border-none">
               <p className="text-2xl">
-                "Nos decidimos por alquilar un coche y dimos con Rentacar ¡y fue
-                una experiencia asombrosa! La reserva fue rápida y los precios
-                de alquiler fueron sumamente accesibles."
+                &quot;Nos decidimos por alquilar un coche y dimos con Rentacar
+                ¡y fue una experiencia asombrosa! La reserva fue rápida y los
+                precios de alquiler fueron sumamente accesibles.&quot;
               </p>
             </CardContent>
             <CardFooter className="p-9 pt-0">
@@ -59,9 +59,10 @@ export const PeopleReview = () => {
           <Card className="border-none bg-background rounded-none flex flex-col justify-between shadow">
             <CardContent className="p-9 border-none">
               <p className="text-2xl">
-                "El coche estaba en excelente estado e hizo que nuestro viaje
-                fuese aún mejor. Hemos quedado muy contentos con el servicio de
-                Rentacar y volveremos a alquilar con ellos sin duda."
+                &quot;El coche estaba en excelente estado e hizo que nuestro
+                viaje fuese aún mejor. Hemos quedado muy contentos con el
+                servicio de Rentacar y volveremos a alquilar con ellos sin
+                duda.&quot;
               </p>
             </CardContent>
             <CardFooter className="p-9 pt-0">

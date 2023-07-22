@@ -17,6 +17,7 @@ import { Label } from "@/components/ui/label";
 import { signIn } from "next-auth/react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { Loader2 } from "lucide-react";
 
 const RegisterForm = () => {
   const [loading, setLoading] = useState(null);
@@ -47,8 +48,6 @@ const RegisterForm = () => {
         email,
         password,
       });
-
-      console.log(res);
 
       if (res.status === 201) {
         await signIn("credentials", {
@@ -94,10 +93,13 @@ const RegisterForm = () => {
             onClick={() => handleSocialRegister("github")}
             color="#F8F"
             variant="outline"
-            className="w-full hover:bg-card"
+            className="w-full hover:bg-card rounded"
             loading={loading === "github"}
             disabled={loading != null}
           >
+            {loading === "github" && (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            )}
             {loading !== "github" && <Icons.gitHub className="mr-2 h-4 w-4" />}
             Github
           </Button>
@@ -105,10 +107,13 @@ const RegisterForm = () => {
             onClick={() => handleSocialRegister("google")}
             color="#F8F"
             variant="outline"
-            className="w-full hover:bg-card"
+            className="w-full hover:bg-card rounded"
             loading={loading === "google"}
             disabled={loading != null}
           >
+            {loading === "google" && (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            )}
             {loading !== "google" && <Icons.google className="mr-2 h-4 w-4" />}
             Google
           </Button>
@@ -241,12 +246,15 @@ const RegisterForm = () => {
             />
           </div>
           <Button
-            className="w-full"
+            className="w-full rounded"
             loading={loading === "credentials"}
             disabled={loading != null}
             spinnerColor="#fff"
             type="submit"
           >
+            {loading === "credentials" && (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            )}
             Crear cuenta
           </Button>
         </form>

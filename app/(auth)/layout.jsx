@@ -6,7 +6,6 @@ import { redirect } from "next/navigation";
 
 const AuthLayout = async ({ children }) => {
   const session = await getServerSession();
-  console.log(session);
   if (session) redirect("/");
 
   return (

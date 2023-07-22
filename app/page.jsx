@@ -5,6 +5,10 @@ import { Navbar } from "./components/Navbar";
 import { PickCar } from "./components/PickCar";
 import { SaveBanner } from "./components/SaveBanner";
 import { Container } from "@/components/shared/Container";
+import { WhyChooseUs } from "./components/WhyChooseUs";
+import { PeopleReview } from "./components/PeopleReview";
+import { Faq } from "./components/Faq";
+import { Footer } from "@/components/shared/Footer";
 
 const Page = () => {
   return (
@@ -15,10 +19,12 @@ const Page = () => {
         <PickCar />
       </Container>
       <EasyBanner />
-      <Container className="max-w-[1920px] mx-auto relative bg-no-repeat bg-right-top px-8">
-        <Models />
-      </Container>
+      <Models />
       <SaveBanner />
+      <WhyChooseUs />
+      <PeopleReview />
+      <Faq />
+      <Footer />
     </main>
   );
 };

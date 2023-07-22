@@ -10,7 +10,9 @@ export const MainBanner = () => {
         <div className="flex">
           <div className="w-[37.5%]">
             <div>
-              <h3 className="text-2xl mb-4">Planea tu viaje ahora</h3>
+              <h3 className="text-2xl mb-4 underline decoration-primary">
+                Planea tu viaje ahora
+              </h3>
               <h1
                 className="text-6xl font-bold mb-6"
                 style={{

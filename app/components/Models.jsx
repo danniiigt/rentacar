@@ -18,9 +18,9 @@ const TableRow = ({ title, value }) => {
 
 export const Models = () => {
   return (
-    <section>
-      <Container className="my-44">
-        <h1 className="text-2xl font-semibold text-center underline decoration-primary">
+    <Container className="max-w-[1920px] mx-auto relative bg-no-repeat bg-right-top px-8">
+      <Container className="my-24">
+        <h1 className="text-2xl text-center underline decoration-primary">
           Modelos de coche
         </h1>
         <h1 className="text-5xl font-bold text-center">Nuestra flota</h1>
@@ -89,11 +89,11 @@ export const Models = () => {
               </div>
             </div>
             <Button className="py-2 h-fit text-xl w-full shadow-xl shadow-primary/25">
-              ALQUILAR
+              VER STOCK
             </Button>
           </div>
         </div>
       </Container>
-    </section>
+    </Container>
   );
 };

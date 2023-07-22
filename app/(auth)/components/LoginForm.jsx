@@ -14,9 +14,10 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { signIn, useSession } from "next-auth/react";
+import { signIn } from "next-auth/react";
 import { Icons } from "@/components/ui/icons";
 import { useRouter } from "next/navigation";
+import { Loader2 } from "lucide-react";
 
 const LoginForm = () => {
   const router = useRouter();
@@ -85,7 +86,10 @@ const LoginForm = () => {
             loading={loading === "github"}
             disabled={loading != null}
           >
-            {!loading && <Icons.gitHub className="mr-2 h-4 w-4" />}
+            {loading === "github" && (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            )}
+            {loading !== "github" && <Icons.gitHub className="mr-2 h-4 w-4" />}
             Github
           </Button>
           <Button
@@ -96,6 +100,9 @@ const LoginForm = () => {
             loading={loading === "google"}
             disabled={loading != null}
           >
+            {loading === "google" && (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            )}
             {loading !== "google" && <Icons.google className="mr-2 h-4 w-4" />}
             Google
           </Button>
@@ -178,6 +185,9 @@ const LoginForm = () => {
             spinnerColor="#fff"
             disabled={loading != null}
           >
+            {loading === "credentials" && (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            )}
             Acceder
           </Button>
         </form>

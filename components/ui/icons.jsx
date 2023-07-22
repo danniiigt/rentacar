@@ -40,6 +40,7 @@ import {
   Files,
   MousePointerClick,
   TrendingUp,
+  Quote,
 } from "lucide-react";
 
 export const Icons = {
@@ -541,4 +542,5 @@ export const Icons = {
   files: Files,
   click2: MousePointerClick,
   trendingUp: TrendingUp,
+  quote: Quote,
 };

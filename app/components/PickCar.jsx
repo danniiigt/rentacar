@@ -205,7 +205,7 @@ export const PickCar = () => {
                 </SelectContent>
               </Select>
             </div>
-            <Button className="mb-0.5 shadow-md shadow-primary/25">
+            <Button className="mb-0.5 shadow-md rounded shadow-primary/25">
               Buscar
             </Button>
           </div>

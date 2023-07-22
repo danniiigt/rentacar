@@ -32,7 +32,7 @@ const FirstColumn = () => {
 
           <h1 className="font-semibold">+34 601352386</h1>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center hover:text-primary cursor-pointer transition-all duration-150">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -45,7 +45,7 @@ const FirstColumn = () => {
 
           <h1 className="font-semibold">soporte@rentacar.com</h1>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center hover:text-primary cursor-pointer transition-all duration-150">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

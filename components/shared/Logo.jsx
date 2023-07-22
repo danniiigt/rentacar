@@ -5,8 +5,8 @@ export const Logo = ({ className }) => {
     <Image
       src="/images/logo.svg"
       alt="Rentacar"
-      width={40}
-      height={40}
+      width={72}
+      height={72}
       className={className}
     />
   );

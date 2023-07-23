@@ -7,8 +7,8 @@ let links = [
   { href: "/", label: "Inicio" },
   { href: "/stock", label: "Nuestro stock" },
   { href: "/acerca-de", label: "Acerca de" },
-  { href: "/encuentranos", label: "Encuentranos" },
   { href: "/nuestro-equipo", label: "Nuestro equipo" },
+  { href: "/contacto", label: "Contacto" },
 ];
 
 export const NavbarMenu = () => {

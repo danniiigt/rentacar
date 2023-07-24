@@ -21,9 +21,10 @@ const ContactoPage = () => {
               style={{ textWrap: "balance" }}
               className="text-muted-foreground"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              assumenda illo fuga eveniet debitis voluptate omnis, eaque quia
-              recusandae ipsam.
+              Si tienes alguna pregunta sobre nuestros servicios de alquiler de
+              coches, no dudes en ponerte en contacto con nosotros. Nuestro
+              equipo de atención al cliente estará encantado de ayudarte en lo
+              que necesites.
             </p>
 
             <div className="space-y-3">

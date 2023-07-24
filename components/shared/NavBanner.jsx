@@ -7,7 +7,6 @@ import Link from "next/link";
 const links = [
   { href: "/", label: "Inicio" },
   { href: "/stock", label: "Nuestro stock" },
-  { href: "/acerca-de", label: "Acerca de" },
   { href: "/nuestro-equipo", label: "Nuestro equipo" },
   { href: "/contacto", label: "Contacto" },
 ];

@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import {
   AlertTriangle,
   ArrowRight,
@@ -41,6 +40,7 @@ import {
   MousePointerClick,
   TrendingUp,
   Quote,
+  Car,
 } from "lucide-react";
 
 export const Icons = {
@@ -543,4 +543,5 @@ export const Icons = {
   click2: MousePointerClick,
   trendingUp: TrendingUp,
   quote: Quote,
+  car: Car,
 };
